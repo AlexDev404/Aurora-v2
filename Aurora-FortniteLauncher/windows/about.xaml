@@ -1,0 +1,20 @@
+<About x:Class="Aurora.Launcher.Windows.About"
+       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+       xmlns:ui="http://schemas.modernwpf.com/2019"
+       xmlns:p="clr-namespace:Aurora.Launcher.Properties"
+       x:Name="dialog" FrameworkElement.Style="{StaticResource ScrollableContentDialogStyle}"
+       Title="{x:Static p:Resources.AboutDialogTitle}" CloseButtonText="Close" DefaultButton="Primary">
+  <SimpleStackPanel>
+    <Label x:Name="InfoLabel" Content="{x:Static p:Resources.AboutDialogContent}" HorizontalAlignment="Center"
+           VerticalAlignment="Center" HorizontalContentAlignment="Left" Width="270"/>
+    <Label x:Name="VersionHeaderLabel" Content="{x:Static p:Resources.AboutDialogVersionTitle}"
+           HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Left"
+           Width="270" FontSize="17"/>
+    <Label x:Name="VersionLabel" Content="{x:Static p:Resources.AboutDialogVersionContent}"
+           HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Left"
+           Width="270"/>
+  </SimpleStackPanel>
+</About>

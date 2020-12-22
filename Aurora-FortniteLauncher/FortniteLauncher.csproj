@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Data\copy\Aurora\FortniteLauncher.exe-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5C5D448C-8CD1-4303-B70E-A2E5400C9B46}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>FortniteLauncher</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Aurora.Launcher</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="_003CModule_003E.cs" />
+    <Compile Include="ProcessedByFody.cs" />
+    <Compile Include="Costura\AssemblyLoader.cs" />
+    <Compile Include="Build.cs" />
+    <Compile Include="Endpoints.cs" />
+    <Compile Include="Extensions.cs" />
+    <Compile Include="Globals.cs" />
+    <Compile Include="Konami.cs" />
+    <Compile Include="Properties\Resources.cs" />
+    <Compile Include="Properties\Settings.cs" />
+    <Compile Include="Utilities\Injector.cs" />
+    <Compile Include="Utilities\User32.cs" />
+    <Compile Include="Utilities\Win32.cs" />
+    <Compile Include="Providers\AuroraAuth.cs" />
+    <Compile Include="Providers\AuroraConfig.cs" />
+    <Compile Include="Providers\EpicLauncher.cs" />
+    <Compile Include="Providers\LauncherInstalled.cs" />
+    <Compile Include="Providers\Installation.cs" />
+    <Compile Include="Providers\FortniteLauncher.cs" />
+    <Compile Include="Models\Config.cs" />
+    <Compile Include="Models\DeviceAuth.cs" />
+    <Compile Include="Models\ExchangeCode.cs" />
+    <Compile Include="Models\OAuthToken.cs" />
+    <Compile Include="Enums\AntiCheat.cs" />
+    <Compile Include="WindowsTransRights.xaml.cs">
+      <DependentUpon>windowstransrights.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WindowsSettings.xaml.cs">
+      <DependentUpon>windowssettings.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WindowsLauncher.xaml.cs">
+      <DependentUpon>windowslauncher.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WindowsAbout.xaml.cs">
+      <DependentUpon>windowsabout.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WindowsLogin.xaml.cs">
+      <DependentUpon>windowslogin.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>app.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\auroralogo.png" />
+    <Resource Include="images\favicon.ico" />
+    <Resource Include="images\gradient.png" />
+    <Resource Include="images\transflag.png" />
+    <Resource Include="resources\fonts\font_002520awesome\fa-brands-regular.otf" />
+    <Resource Include="resources\fonts\font_002520awesome\fa-free-regular.otf" />
+    <Resource Include="resources\fonts\font_002520awesome\fa-free-solid.otf" />
+    <Resource Include="resources\fonts\sf\aurora-sfbold.ttf" />
+    <Resource Include="resources\fonts\sf\sfuitext-bold.ttf" />
+    <Resource Include="resources\fonts\sf\sfuitext-bolditalic.ttf" />
+    <Resource Include="resources\fonts\sf\sfuitext-heavy.ttf" />
+    <Resource Include="resources\fonts\sf\sfuitext-heavyitalic.ttf" />
+    <Resource Include="resources\fonts\sf\sfuitext-light.ttf" />
+    <Resource Include="resources\fonts\sf\sfuitext-lightitalic.ttf" />
+    <Resource Include="resources\fonts\sf\sfuitext-medium.ttf" />
+    <Resource Include="resources\fonts\sf\sfuitext-mediumitalic.ttf" />
+    <Resource Include="resources\fonts\sf\sfuitext-regular.ttf" />
+    <Resource Include="resources\fonts\sf\sfuitext-regularitalic.ttf" />
+    <Resource Include="resources\fonts\sf\sfuitext-semibold.ttf" />
+    <Resource Include="resources\fonts\sf\sfuitext-semibolditalic.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="costura\costura\dll.compressed" />
+    <EmbeddedResource Include="costura\cs\modernwpf\resources\dll.compressed" />
+    <EmbeddedResource Include="costura\de\modernwpf\resources\dll.compressed" />
+    <EmbeddedResource Include="costura\es\modernwpf\resources\dll.compressed" />
+    <EmbeddedResource Include="costura\fa\modernwpf\resources\dll.compressed" />
+    <EmbeddedResource Include="costura\fr\modernwpf\resources\dll.compressed" />
+    <EmbeddedResource Include="costura\it\modernwpf\resources\dll.compressed" />
+    <EmbeddedResource Include="costura\ja\modernwpf\resources\dll.compressed" />
+    <EmbeddedResource Include="costura\ko\modernwpf\resources\dll.compressed" />
+    <EmbeddedResource Include="costura\microsoft\windowsapicodepack\dll.compressed" />
+    <EmbeddedResource Include="costura\microsoft\windowsapicodepack\pdb.compressed" />
+    <EmbeddedResource Include="costura\microsoft\windowsapicodepack\shell\dll.compressed" />
+    <EmbeddedResource Include="costura\microsoft\windowsapicodepack\shell\pdb.compressed" />
+    <EmbeddedResource Include="costura\microsoft\windowsapicodepack\shellextensions\dll.compressed" />
+    <EmbeddedResource Include="costura\microsoft\windowsapicodepack\shellextensions\pdb.compressed" />
+    <EmbeddedResource Include="costura\modernwpf\controls\dll.compressed" />
+    <EmbeddedResource Include="costura\modernwpf\dll.compressed" />
+    <EmbeddedResource Include="costura\newtonsoft\json\dll.compressed" />
+    <EmbeddedResource Include="costura\pl\modernwpf\resources\dll.compressed" />
+    <EmbeddedResource Include="costura\pt-BR\modernwpf\resources\dll.compressed" />
+    <EmbeddedResource Include="costura\ru\modernwpf\resources\dll.compressed" />
+    <EmbeddedResource Include="costura\system\valuetuple\dll.compressed" />
+    <EmbeddedResource Include="costura\tr\modernwpf\resources\dll.compressed" />
+    <EmbeddedResource Include="costura\zh-Hans\modernwpf\resources\dll.compressed" />
+    <EmbeddedResource Include="costura\zh-Hant\modernwpf\resources\dll.compressed" />
+    <EmbeddedResource Include="Properties\Resources.resx" />
+    <EmbeddedResource Include="Resources\FortniteClient-Win64-Shipping_BE.exe" />
+    <EmbeddedResource Include="Resources\FortniteClient-Win64-Shipping_EAC.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="app.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="windows\about.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="windows\launcher.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="windows\login.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="windows\settings.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="windows\transrights.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

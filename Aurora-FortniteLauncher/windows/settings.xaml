@@ -1,0 +1,19 @@
+<Settings x:Class="Aurora.Launcher.Windows.Settings"
+          xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+          xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+          xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+          xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+          xmlns:ui="http://schemas.modernwpf.com/2019"
+          xmlns:p="clr-namespace:Aurora.Launcher.Properties"
+          x:Name="dialog" FrameworkElement.Style="{StaticResource ScrollableContentDialogStyle}"
+          Title="{x:Static p:Resources.SettingsDialogTitle}"
+          PrimaryButtonText="{x:Static p:Resources.SettingsDialogSaveButton}"
+          CloseButtonText="{x:Static p:Resources.SettingsDialogCancelButton}" DefaultButton="Primary">
+  <SimpleStackPanel Spacing="5">
+    <TextBox x:Name="PathField" Header="{x:Static p:Resources.SettingsDialogPathTitle}" Text="" Width="234"
+             AcceptsReturn="true" Margin="0,0,80,0"/>
+    <Button Click="BrowseButton_Click" x:Name="BrowseButton"
+            Content="{x:Static p:Resources.SettingsDialogBrowseButton}" Cursor="Hand" Margin="240,-42,0,0"
+            Height="32" Width="74"/>
+  </SimpleStackPanel>
+</Settings>
