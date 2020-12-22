@@ -12,3 +12,8 @@ Linker: Microsoft Linker 14 <br>
 Compiler: Visual C/C++ 19 [C++] <br>
 Tool: Microsoft Visual Studio 2015 <br>
 **Packer: UPX(3.96)[NRV, brute]** <br>
+
+## What's Coming Next?
+
+- Decompiled DLL
+- Server Source Code
