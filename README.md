@@ -6,8 +6,6 @@ Aurora v2 Launcher Source Code
 
 ## DLL Information
 
-<br>
-
 Linker: Microsoft Linker 14 <br>
 Compiler: Visual C/C++ 19 [C++] <br>
 Tool: Microsoft Visual Studio 2015 <br>
