@@ -1,7 +1,7 @@
 # Aurora-v2
 Aurora v2 Launcher Source Code
 
-> Check out the [Wiki][0] if you're interested in creating your own spin-off where I will be going through every single piece of code and explaining it so y ou can better understand it.
+> Check out the [Wiki][0] (WIP, check back in ~6 months) if you're interested in creating your own spin-off where I will be going through every single piece of code and explaining it so y ou can better understand it.
 
 ## FortniteLauncher Source is in Aurora-FortniteLauncher
 - Open the `.sln` (FortniteLauncher) in Visual Studio to get started! :)
