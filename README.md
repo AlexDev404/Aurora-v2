@@ -13,9 +13,4 @@ Compiler: Visual C/C++ 19 [C++] <br>
 Tool: Microsoft Visual Studio 2015 <br>
 **Packer: UPX(3.96)[NRV, brute]** <br>
 
-## What's Coming Next?
-
-- Decompiled DLL
-- Leaked Server Source Code
-
 [0]: https://github.com/alexdev404/aurora-v2/wiki
